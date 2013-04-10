@@ -8,6 +8,9 @@ gem 'rails', '3.2.13'
 gem 'sqlite3'
 
 
+gem 'execjs'
+gem 'therubyracer'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -36,3 +39,11 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+group :test, :development do
+  gem 'rspec-rails', '~> 2.11'
+end
+
+group :test do
+  gem 'capybara', '1.1.2'
+end
